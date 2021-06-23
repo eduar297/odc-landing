@@ -14,33 +14,29 @@ body {
 
 /* tipografia */
 
-
-/* h1 {
+h1 {
     font-weight: 700;
     font-size: calc(1.8em + 1vw);
     line-height: calc(1em + 1vw);
-}*/
+}
 
-
-/* h4 {
+h4 {
     font-weight: 600;
     font-size: calc(.9em + 1vw);
-} */
+}
 
 h2 {
     letter-spacing: 3px;
     font-size: calc(1em + 1.2vw);
 }
 
-
-/* p {
+p {
     font-size: calc(.4em + 1vw);
-} */
+}
 
-
-/* small {
+small {
     font-size: calc(.4em + .6vw);
-} */
+}
 
 .text-blue {
     color: #008cba;
@@ -81,6 +77,16 @@ h2 {
     background-color: rgb(238, 238, 238);
 }
 
+.section-3 .icon {
+    background-color: #1d394f;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    height: 50px;
+}
+
 .section-4 {
     background-color: rgb(238, 238, 238);
 }
@@ -88,40 +94,6 @@ h2 {
 .models {
     margin-left: 5vw;
     margin-right: 5vw;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .models {
-        margin-left: 0vw;
-        margin-right: 0vw;
-    }
-    .btn-outline-secondary {
-        font-size: calc( .5em + .5vw);
-    }
-}
-
-@media (max-width: 768px) {
-    .main-header {
-        background: url(../img/header-sm.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
-}
-
-@media (max-width: 768px) {
-    .models {
-        margin-left: 0vw;
-        margin-right: 0vw;
-    }
-    .btn-outline-secondary {
-        margin-left: 0vw;
-        margin-right: 0vw;
-        font-size: calc( .5em + 1.2vw);
-    }
-    h2 {
-        font-size: calc(1.5em + 1.5vw);
-    }
 }
 
 li {
@@ -142,8 +114,143 @@ li span {
     border-radius: 10px;
 }
 
-.pos-rel {
-    position: relative;
+.parent {
     background-color: #008cba;
-    height: 300px;
+    height: 50vh;
+    margin-top: 6em;
+}
+
+.parent button {
+    color: #1D394F;
+}
+
+.parent p,
+h1,
+h3,
+h4 {
+    font-weight: 250;
+}
+
+.parent .container {
+    position: relative;
+}
+
+.white-car {
+    position: absolute;
+    top: -2vw;
+    left: -1vw;
+    width: 25vw;
+    z-index: 1;
+}
+
+.yellow-car {
+    position: absolute;
+    top: -6vw;
+    left: 16vw;
+    width: 25vw;
+    z-index: 0;
+}
+
+.orange-car {
+    position: absolute;
+    top: -9vw;
+    left: 36vw;
+    width: 20vw;
+    z-index: 2;
+}
+
+.blue-car {
+    position: absolute;
+    top: -13vw;
+    left: 43vw;
+    width: 30vw;
+    z-index: 3;
+}
+
+.red-car {
+    position: absolute;
+    top: 0vw;
+    left: 62vw;
+    width: 28vw;
+    z-index: 3;
+}
+
+footer img {
+    width: 10em;
+}
+
+
+/* MEDIAS */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .models {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    .btn-outline-secondary {
+        font-size: calc( .5em + .5vw);
+    }
+}
+
+@media (max-width: 768px) {
+    .parent {
+        height: 70vh;
+        /* margin-top: 6em; */
+    }
+    .main-header {
+        background: url(../img/header-sm.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .models {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    .btn-outline-secondary {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        font-size: calc( .5em + 1.2vw);
+    }
+    h2 {
+        font-size: calc(1.5em + 1.5vw);
+    }
+    .white-car {
+        position: absolute;
+        top: 48vh;
+        left: 15vw;
+        width: 14em;
+        z-index: 1;
+    }
+    .yellow-car {
+        position: absolute;
+        top: 48vh;
+        left: 37vw;
+        width: 15em;
+        z-index: 0;
+    }
+    .orange-car {
+        position: absolute;
+        top: -7vh;
+        left: 10vw;
+        width: 10em;
+        z-index: 2;
+    }
+    .blue-car {
+        position: absolute;
+        top: -14vh;
+        left: 17vw;
+        width: 15em;
+        z-index: 3;
+    }
+    .red-car {
+        position: absolute;
+        top: -4vh;
+        left: 40vw;
+        width: 12em;
+        z-index: 3;
+    }
+    li span {
+        font-size: calc(2em + 4vw);
+    }
 }
