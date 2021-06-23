@@ -1,0 +1,149 @@
+.main-header {
+    background: url(../img/header-md.jpg);
+    background-size: cover;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+body {
+    font-family: 'Kanit';
+    color: #1d394f;
+}
+
+
+/* tipografia */
+
+
+/* h1 {
+    font-weight: 700;
+    font-size: calc(1.8em + 1vw);
+    line-height: calc(1em + 1vw);
+}*/
+
+
+/* h4 {
+    font-weight: 600;
+    font-size: calc(.9em + 1vw);
+} */
+
+h2 {
+    letter-spacing: 3px;
+    font-size: calc(1em + 1.2vw);
+}
+
+
+/* p {
+    font-size: calc(.4em + 1vw);
+} */
+
+
+/* small {
+    font-size: calc(.4em + .6vw);
+} */
+
+.text-blue {
+    color: #008cba;
+}
+
+.btn-primary {
+    background-color: #008cba;
+}
+
+.btn-primary:hover {
+    background-color: #1D394F;
+}
+
+.btn-outline-secondary {
+    background-color: #fff;
+    color: #008cba;
+    border-color: #008cba;
+    width: calc(8em + 6vw);
+    height: calc(2em + 3vh);
+}
+
+.btn-outline-secondary:hover {
+    background-color: #1D394F;
+    border-color: #008cba;
+}
+
+.frm {
+    background-color: rgb(249, 249, 249);
+    border: 0.0625rem solid #1D394F;
+    border-radius: 0 0 0 0;
+}
+
+.card-body p img {
+    width: 30%;
+}
+
+.section-2 {
+    background-color: rgb(238, 238, 238);
+}
+
+.section-4 {
+    background-color: rgb(238, 238, 238);
+}
+
+.models {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .models {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    .btn-outline-secondary {
+        font-size: calc( .5em + .5vw);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        background: url(../img/header-sm.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+@media (max-width: 768px) {
+    .models {
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    .btn-outline-secondary {
+        margin-left: 0vw;
+        margin-right: 0vw;
+        font-size: calc( .5em + 1.2vw);
+    }
+    h2 {
+        font-size: calc(1.5em + 1.5vw);
+    }
+}
+
+li {
+    display: inline-block;
+    font-size: calc(.5em + .1vw);
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: calc(1em + 3vw);
+    background-color: #1D394F;
+    color: #fff;
+    padding-left: calc(.3em + .5vw);
+    padding-right: calc(.3em + .5vw);
+    border-radius: 10px;
+}
+
+.pos-rel {
+    position: relative;
+    background-color: #008cba;
+    height: 300px;
+}
