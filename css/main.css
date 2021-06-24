@@ -58,6 +58,14 @@ small {
     height: calc(2em + 3vh);
 }
 
+.parent .btn-outline-secondary {
+    color: #1D394F;
+}
+
+.parent .btn-outline-secondary:hover {
+    color: #fff;
+}
+
 .btn-outline-secondary:hover {
     background-color: #1D394F;
     border-color: #008cba;
@@ -180,7 +188,7 @@ footer img {
 }
 
 
-/* MEDIAS */
+/* -----------------------------------MEDIAS----------------------------------- */
 
 @media (min-width: 768px) and (max-width: 991px) {
     .models {
@@ -200,6 +208,7 @@ footer img {
     .main-header {
         background: url(../img/header-sm.jpg);
         background-size: contain;
+        min-height: 400px;
         background-repeat: no-repeat;
         background-position: center top;
     }
@@ -215,6 +224,11 @@ footer img {
     h2 {
         font-size: calc(1.5em + 1.5vw);
     }
+    
+    p {
+        font-size: calc(.6em + 1.1vw);
+    }
+
     .white-car {
         position: absolute;
         top: 48vh;
@@ -252,5 +266,61 @@ footer img {
     }
     li span {
         font-size: calc(2em + 4vw);
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .white-car {
+        position: absolute;
+        top: 48vh;
+        left: 8vw;
+        width: 12em;
+        z-index: 1;
+    }
+    .yellow-car {
+        position: absolute;
+        top: 48vh;
+        left: 40vw;
+        width: 15em;
+        z-index: 0;
+    }
+}
+
+@media (width : 768px){
+    .white-car {
+        position: absolute;
+        top: 50vh;
+        left: 20vw;
+        width: 14em;
+        z-index: 1;
+    }
+    .yellow-car {
+        position: absolute;
+        top: 50vh;
+        left: 45vw;
+        width: 15em;
+        z-index: 0;
+    }
+    .orange-car {
+        position: absolute;
+        top: -7vh;
+        left: 15vw;
+        width: 12em;
+        z-index: 2;
+    }
+    .blue-car {
+        position: absolute;
+        top: -14vh;
+        left: 25vw;
+        width: 17em;
+        z-index: 3;
+    }
+    .red-car {
+        position: absolute;
+        top: -4vh;
+        left: 48vw;
+        width: 14em;
+        z-index: 3;
     }
 }
