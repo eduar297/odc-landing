@@ -115,11 +115,11 @@ $("#form-model").submit(function (e) {
     var event = 804;
     var postalCode = form.querySelector("input[name='pc']").value;
     //Capture value from phone input
-    var name = form.querySelector("input[name='name']").value;
+    // var name = form.querySelector("input[name='name']").value;
 
     var data = {
-        "model": model,
-        "name": name,
+        // "model": model,
+        // "name": name,
         "phone": phone,
         "event": event,
         "prefix": prefix,
