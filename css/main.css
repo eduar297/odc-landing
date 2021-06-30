@@ -200,17 +200,16 @@ footer img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .parent {
         height: 70vh;
         /* margin-top: 6em; */
     }
     .main-header {
-        background: url(../img/header-sm.jpg);
-        background-size: contain;
-        min-height: 400px;
-        background-repeat: no-repeat;
-        background-position: center top;
+        background: none;
+    }
+    #header-sm {
+        width: 400px;
     }
     .models {
         margin-left: 0vw;
@@ -224,11 +223,9 @@ footer img {
     h2 {
         font-size: calc(1.5em + 1.5vw);
     }
-    
     p {
         font-size: calc(.6em + 1.1vw);
     }
-
     .white-car {
         position: absolute;
         top: 48vh;
@@ -270,7 +267,6 @@ footer img {
 }
 
 @media (max-width: 500px) {
-    
     .white-car {
         position: absolute;
         top: 48vh;
@@ -287,40 +283,8 @@ footer img {
     }
 }
 
-@media (width : 768px){
-    .white-car {
-        position: absolute;
-        top: 50vh;
-        left: 20vw;
-        width: 14em;
-        z-index: 1;
-    }
-    .yellow-car {
-        position: absolute;
-        top: 50vh;
-        left: 45vw;
-        width: 15em;
-        z-index: 0;
-    }
-    .orange-car {
-        position: absolute;
-        top: -7vh;
-        left: 15vw;
-        width: 12em;
-        z-index: 2;
-    }
-    .blue-car {
-        position: absolute;
-        top: -14vh;
-        left: 25vw;
-        width: 17em;
-        z-index: 3;
-    }
-    .red-car {
-        position: absolute;
-        top: -4vh;
-        left: 48vw;
-        width: 14em;
-        z-index: 3;
+@media(max-width: 400px) {
+    #header-sm {
+        width: 99vw;
     }
 }
