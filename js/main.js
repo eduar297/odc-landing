@@ -136,11 +136,13 @@ function _onSubmit(data, frm) {
     .post("https://app.liddeo.com/api/landings/register", data)
     .then((res) => {
       loading(false, res.data.message, frm);
-      console.log(res.data.message);
+      // console.log(res.data.message);
+      dataLayer.push({ 'event': action });
     })
     .catch((err) => {
       loading(false, err.response.data.message, frm);
-      console.log(err.response.data.message);
+      // console.log(err.response.data.message);
+      dataLayer.push({ 'event': actionError });
     });
 }
 
