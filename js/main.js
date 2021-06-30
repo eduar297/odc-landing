@@ -36,6 +36,10 @@ const loading = (_loading, _msg, frm) => {
     spin.style.display = "none";
     msg.style.display = "block";
     if (_msg != "") msg.innerHTML = messages[_msg];
+    else {
+      spin.style.display = "none";
+      msg.style.display = "none";
+    }
     button.disabled = false;
     button.classList.remove("btn-secondary");
     button.classList.add("btn-primary");
