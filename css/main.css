@@ -37,16 +37,28 @@ small {
   font-size: calc(0.4em + 0.6vw);
 }
 
+.col-video {
+  height: 50vh;
+}
+
+.frm input {
+  border-color: #000 !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
 .text-blue {
   color: #008cba;
 }
 
 .btn-primary {
   background-color: #008cba;
+  box-shadow: none !important;
 }
 
 .btn-primary:hover {
   background-color: #1d394f;
+  box-shadow: none !important;
 }
 
 .btn-outline-secondary {
@@ -55,6 +67,9 @@ small {
   border-color: #008cba;
   width: calc(8em + 6vw);
   height: calc(2em + 3vh);
+  box-shadow: none !important;
+  border-radius: 0;
+  border: 2px solid #008cba;
 }
 
 .parent .btn-outline-secondary {
@@ -68,6 +83,7 @@ small {
 .btn-outline-secondary:hover {
   background-color: #1d394f;
   border-color: #008cba;
+  box-shadow: none !important;
 }
 
 .frm {
@@ -186,6 +202,10 @@ footer img {
   width: 10em;
 }
 
+.col-video {
+  height: calc(43vh + 1em + 1vw);
+}
+
 /* -----------------------------------MEDIAS----------------------------------- */
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -195,6 +215,20 @@ footer img {
   }
   .btn-outline-secondary {
     font-size: calc(0.5em + 0.5vw);
+  }
+
+  .container-video h1 {
+    font-size: calc(1em + 1.5vw);
+  }
+
+  .video {
+    width: 100% !important;
+    margin-left: 0 !important;
+    height: 35vw !important;
+  }
+
+  .col-video {
+    height: auto;
   }
 }
 
@@ -266,6 +300,10 @@ footer img {
   li span {
     font-size: calc(2em + 4vw);
   }
+
+  .col-video {
+    height: calc(35vh + 10vw + 5em);
+  }
 }
 
 @media (max-width: 500px) {
@@ -305,6 +343,43 @@ footer img {
     left: 46vw;
     width: 50vw;
     z-index: 0;
+  }
+
+  /* h2 {
+    font-size: calc(1.1em + 0.7vw);
+    font-weight: 200;
+  }
+  small {
+    font-size: 11px;
+  }
+  p {
+    font-size: calc(1em + 1vw);
+  } */
+
+  .container-video {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .video {
+    width: 100% !important;
+    margin-left: 0 !important;
+    height: 300px !important;
+  }
+
+  .col-video {
+    padding: 0 0 0 0;
+    height: calc(30vh + 4em);
+  }
+
+  .parent {
+    margin-top: 1.5em;
+  }
+
+  small {
+    font-size: calc(0.6em + 0.9vw);
   }
 }
 
